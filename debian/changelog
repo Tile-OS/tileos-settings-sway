@@ -1,3 +1,9 @@
+tileos-settings-sway (0.2~tileos) unstable; urgency=medium
+
+  * Add start-sway wrapper
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Mon, 10 Apr 2023 19:41:23 +0400
+
 tileos-settings-sway (0.1~tileos) unstable; urgency=medium
 
   * Initial Release.
