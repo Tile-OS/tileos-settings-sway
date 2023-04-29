@@ -1,3 +1,9 @@
+tileos-settings-sway (0.4~tileos) unstable; urgency=medium
+
+  * Initial Sway config
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sat, 29 Apr 2023 15:00:52 +0400
+
 tileos-settings-sway (0.3~tileos) unstable; urgency=medium
 
   * Set Wayland specific environment variables
