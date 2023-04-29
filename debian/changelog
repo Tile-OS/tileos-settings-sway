@@ -1,3 +1,9 @@
+tileos-settings-sway (0.5~tileos) unstable; urgency=medium
+
+  * Add initial Sway user config
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sat, 29 Apr 2023 15:04:38 +0400
+
 tileos-settings-sway (0.4~tileos) unstable; urgency=medium
 
   * Initial Sway config
