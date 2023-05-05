@@ -38,8 +38,8 @@ set $volume_up pulsemixer --change-volume +5 && $volume_bar
 set $volume_mute pulsemixer --toggle-mute && $volume_bar
 
 # clipboard history
-set $clipboard cliphist list | fuzzel -dmenu -p "Select item to copy" --lines 10 --width 35 | cliphist decode | wl-copy
-set $clipboard-del cliphist list | fuzzel -dmenu -p "Select item to delete" --lines 10 --width 35 | cliphist delete
+set $clipboard cliphist list | fuzzel --dmenu -p "Select item to copy" --lines 10 --width 35 | cliphist decode | wl-copy
+set $clipboard-del cliphist list | fuzzel --dmenu -p "Select item to delete" --lines 10 --width 35 | cliphist delete
 
 # Pulseaudo command
 set $pulseaudio $term_float pulsemixer
@@ -94,6 +94,9 @@ set $dex_autostart '[ -x "$(command -v dex)" ] && gdbus wait --session org.kde.S
 
 # Start PCmanFM as a daemon
 set $pcmanfm_daemon '[ -x "$(command -v pcmanfm)" ] && pcmanfm -d'
+
+# Swayr daemon
+set $swayr_daemon '[ -x "$(command -v swayrd)" ] && env RUST_BACKTRACE=1 RUST_LOG=swayr=debug swayrd &> /tmp/swayrd.log'
 
 # Power notifications daemon
 set $poweralertd '[ -x "$(command -v poweralertd)" ] && pkill poweralertd; poweralertd -s -i "line power" &'
