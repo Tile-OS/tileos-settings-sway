@@ -7,7 +7,7 @@
     "modules-right": [
         "custom/playerctl",
         "idle_inhibitor",
-        "custom/dnd",
+        "custom/dunst",
         "sway/language",
         "cpu",
         "memory",
@@ -153,17 +153,10 @@
         "on-click": "nwg-bar -x"
     },
 
-    "custom/dnd": {
-        "interval": "once",
-        "return-type": "json",
-        "format": "{}{icon}",
-        "format-icons": {
-            "default": "",
-            "dnd": ""
-        },
-        "on-click": "makoctl mode | grep 'do-not-disturb' && makoctl mode -r do-not-disturb || makoctl mode -a do-not-disturb; pkill -RTMIN+11 waybar",
-        "exec": "printf '{\"alt\":\"%s\",\"tooltip\":\"Notification mode: %s\"}' $(makoctl mode | grep -q 'do-not-disturb' && echo dnd || echo default) $(makoctl mode | tail -1)",
-        "signal": 11
+    "custom/dunst": {
+        "exec": "/usr/share/sway/scripts/dunst.sh",
+        "on-click": "dunstctl set-paused toggle",
+        "restart-interval": 1,
     },
     
     "tray": {
