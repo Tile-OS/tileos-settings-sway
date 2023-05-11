@@ -1,9 +1,9 @@
 [menu]
 executable = 'fuzzel'
 args = [
-    '--dmenu',,
+    '--dmenu',
     '-p','{prompt}',
-    '-font','Noto Sans 11',
+    '-font','Noto Sans 11'
 ]
 
 [format]
