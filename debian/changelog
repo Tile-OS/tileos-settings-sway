@@ -1,3 +1,18 @@
+tileos-settings-sway (0.11~tileos) unstable; urgency=medium
+
+  * Remove dex from autostart (not needed because of
+    sway-systemd integration)
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Wed, 17 May 2023 14:25:51 +0400
+
+tileos-settings-sway (0.10~tileos) unstable; urgency=medium
+
+  * Removed Waybar from autostart (now handled with systemd)
+  * Removed Swayr from autostart (now handled with systemd)
+  * Added libfm config
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Wed, 17 May 2023 14:14:16 +0400
+
 tileos-settings-sway (0.9~tileos) unstable; urgency=medium
 
   * Wire up more scripts
