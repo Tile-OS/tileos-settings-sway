@@ -89,9 +89,6 @@ set $kanshi '[ -x "$(command -v kanshi)" ] && pkill kanshi; exec kanshi'
 # Workaround for applying GTK theme
 set $import_gsettings '[ -f /usr/share/sway/scripts/import-gsettings.sh ] && /usr/share/sway/scripts/import-gsettings.sh'
 
-# Dex autostart daemon
-set $dex_autostart '[ -x "$(command -v dex)" ] && gdbus wait --session org.kde.StatusNotifierWatcher && dex --autostart'
-
 # Start PCmanFM as a daemon
 set $pcmanfm_daemon '[ -x "$(command -v pcmanfm)" ] && pcmanfm -d'
 
