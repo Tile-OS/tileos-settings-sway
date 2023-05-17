@@ -95,9 +95,6 @@ set $dex_autostart '[ -x "$(command -v dex)" ] && gdbus wait --session org.kde.S
 # Start PCmanFM as a daemon
 set $pcmanfm_daemon '[ -x "$(command -v pcmanfm)" ] && pcmanfm -d'
 
-# Swayr daemon
-set $swayr_daemon '[ -x "$(command -v swayrd)" ] && env RUST_BACKTRACE=1 RUST_LOG=swayr=debug swayrd &> /tmp/swayrd.log'
-
 # Power notifications daemon
 set $poweralertd '[ -x "$(command -v poweralertd)" ] && pkill poweralertd; poweralertd -s -i "line power" &'
 
