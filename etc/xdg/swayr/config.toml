@@ -1,9 +1,14 @@
 [menu]
-executable = 'fuzzel'
+executable = 'wofi'
 args = [
-    '--dmenu',
-    '-p','{prompt}',
-    '-font','Noto Sans 11'
+    '--show=dmenu',
+    '--allow-markup',
+    '--allow-images',
+    '--insensitive',
+    '--cache-file=/dev/null',
+    '--parse-search',
+    '--height=40%',
+    '--prompt={prompt}',
 ]
 
 [format]
