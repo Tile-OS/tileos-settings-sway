@@ -5,31 +5,23 @@
     "modules-left": ["custom/menu", "sway/workspaces", "sway/window"],
     "modules-center": ["custom/wf-recorder", "sway/mode"],
     "modules-right": [
+        "custom/scratchpad",
         "custom/playerctl",
+        "custom/wlsunset",
         "idle_inhibitor",
         "custom/dunst",
         "sway/language",
+        "custom/clipboard",
         "cpu",
         "memory",
         "battery",
         "network",
+        "bluetooth",
         "pulseaudio",
         "clock",
         "custom/power",
         "tray"
     ],
-    
-    "sway/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true
-    },
-    
-    "sway/language": {
-        "format": " {}",
-        "min-length": 5,
-        "tooltip": false,
-        "on-click": "swaymsg input $(swaymsg -t get_inputs --raw | jq '[.[] | select(.type == \"keyboard\")][0] | .identifier') xkb_switch_layout next"
-    },
 
     "custom/menu": {
         "format": "",
@@ -37,89 +29,17 @@
         "tooltip": false
     },
     
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>",
-        "tooltip": false
+    "sway/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true
     },
-    
+
     "sway/window": {
         "format": "{}",
         "max-length": 50,
         "tooltip": true
     },
 
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        },
-        "tooltip": true,
-        "tooltip-format-activated": "power-saving disabled",
-        "tooltip-format-deactivated": "power-saving enabled"
-    },
-
-    "pulseaudio": {
-       "format": "{icon}  {volume}% {format_source}",
-       "format-bluetooth": "{icon} {volume}%",
-       "format-muted": " {format_source}",
-       "format-source": "  {volume}%",
-       "format-source-muted": "",
-       "format-icons": {
-           "headphone": "",
-           "headset": "",
-           "default": ["", "", ""]
-       },
-       "tooltip-format": "{icon}  {volume}% {format_source}",
-       "on-click": "swaymsg exec \\$pulseaudio",
-       "on-click-middle": "swaymsg exec \\$volume_mute",
-       "on-click-right": "swaymsg exec pavucontrol",
-       "on-scroll-up": "swaymsg exec \\$volume_up",
-       "on-scroll-down": "swaymsg exec \\$volume_down"
-    },
-    
-    "battery": {
-        "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
-    },
-    
-    "network": {
-       "format-wifi": " ({signalStrength}%)",
-       "format-ethernet": "",
-       "format-disconnected": "",
-       "tooltip-format": "{ifname} ({essid}): {ipaddr}",
-       "on-click": "swaymsg exec \\$term_float nmtui"
-    },
-    
-    "clock": {
-        "format": "{:%e %b %H:%M}",
-        "tooltip": true,
-        "tooltip-format": "{:%d.%m.%Y %H:%M}",
-        "interval": 5,
-        "on-click": "swaymsg exec \\$calendar"
-    },
-    
-    "cpu": {
-        "interval": 5,
-        "format": " {usage}%",
-        "states": {
-          "warning": 70,
-          "critical": 90
-          },
-    "on-click": "swaymsg exec \\$term_float htop"
-    },
-    
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "states": {
-          "warning": 70,
-          "critical": 90
-        },
-    "on-click": "swaymsg exec \\$term_float htop"
-    
-    },
-    
     "custom/wf-recorder": {
          "interval": "once",
          "return-type": "json",
@@ -129,6 +49,24 @@
          "exec-if": "pgrep wf-recorder",
          "on-click": "killall -s SIGINT wf-recorder",
          "signal": 8
+    },
+
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>",
+        "tooltip": false
+    },
+
+    "custom/scratchpad": {
+        "interval": "once",
+        "return-type": "json",
+        "format": "{icon}",
+        "format-icons": {
+            "one": "",
+            "many": ""
+        },
+        "exec": "/bin/bash /usr/share/sway/scripts/scratchpad.sh; pkill -RTMIN+7 waybar",
+        "on-click": "swaymsg 'scratchpad show'",
+        "signal": 7
     },
 
     "custom/playerctl": {
@@ -148,15 +86,130 @@
         "signal": 5
     },
 
-    "custom/power": {
-        "format": "",
-        "on-click": "nwg-bar -x"
+    "custom/wlsunset": {
+        "interval": "once",
+        "tooltip": true,
+        "tooltip-format": "{tooltip}",
+        "return-type": "json",
+        "format": "{icon}",
+        "format-icons": {
+            "on": "",
+            "off": ""
+        },
+        "exec": "fallback_latitude=50.1 fallback_longitude=8.7 latitude= longitude= /usr/share/sway/scripts/sunset.sh",
+        "on-click": "/usr/share/sway/scripts/sunset.sh toggle; pkill -RTMIN+6 waybar",
+        "exec-if": "/usr/share/sway/scripts/sunset.sh check",
+        "signal": 6
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "tooltip": true,
+        "tooltip-format-activated": "power-saving disabled",
+        "tooltip-format-deactivated": "power-saving enabled"
     },
 
     "custom/dunst": {
         "exec": "/usr/share/sway/scripts/dunst.sh",
         "on-click": "dunstctl set-paused toggle",
         "restart-interval": 1,
+    },
+    
+    "sway/language": {
+        "format": " {}",
+        "min-length": 5,
+        "tooltip": false,
+        "on-click": "swaymsg input $(swaymsg -t get_inputs --raw | jq '[.[] | select(.type == \"keyboard\")][0] | .identifier') xkb_switch_layout next"
+    },
+
+    "custom/clipboard": {
+        "format": "",
+        "interval": "once",
+        "return-type": "json",
+        "on-click": "swaymsg -q exec '$clipboard'; pkill -RTMIN+9 waybar",
+        "on-click-right": "swaymsg -q exec '$clipboard-del'; pkill -RTMIN+9 waybar",
+        "on-click-middle": "rm -f ~/.cache/cliphist/db; pkill -RTMIN+9 waybar",
+        "exec": "printf '{\"tooltip\":\"%s\"}' $(cliphist list | wc -l)' item(s) in the clipboard\r(Mid click to clear)'",
+        "exec-if": "[ -x \"$(command -v cliphist)\" ] && [ $(cliphist list | wc -l) -gt 0 ]",
+        "signal": 9
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%",
+        "states": {
+          "warning": 70,
+          "critical": 90
+          },
+    "on-click": "swaymsg exec \\$term_float htop"
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "states": {
+          "warning": 70,
+          "critical": 90
+        },
+    "on-click": "swaymsg exec \\$term_float htop"
+    
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+       "format-wifi": " ({signalStrength}%)",
+       "format-ethernet": "",
+       "format-disconnected": "",
+       "tooltip-format": "{ifname} ({essid}): {ipaddr}",
+       "on-click": "swaymsg exec \\$term_float nmtui"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "",
+        "on-click": "swaymsg exec \\$bluetooth",
+        "on-click-right": "rfkill toggle bluetooth",
+        "tooltip-format": "{}"
+    },
+
+    "pulseaudio": {
+       "format": "{icon}  {volume}% {format_source}",
+       "format-bluetooth": "{icon} {volume}%",
+       "format-muted": " {format_source}",
+       "format-source": "  {volume}%",
+       "format-source-muted": "",
+       "format-icons": {
+           "headphone": "",
+           "headset": "",
+           "default": ["", "", ""]
+       },
+       "tooltip-format": "{icon}  {volume}% {format_source}",
+       "on-click": "swaymsg exec \\$pulseaudio",
+       "on-click-middle": "swaymsg exec \\$volume_mute",
+       "on-click-right": "swaymsg exec pavucontrol",
+       "on-scroll-up": "swaymsg exec \\$volume_up",
+       "on-scroll-down": "swaymsg exec \\$volume_down"
+    },
+    
+    "clock": {
+        "format": "{:%e %b %H:%M}",
+        "tooltip": true,
+        "tooltip-format": "{:%d.%m.%Y %H:%M}",
+        "interval": 5,
+        "on-click": "swaymsg exec \\$calendar"
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "nwg-bar -x"
     },
     
     "tray": {
