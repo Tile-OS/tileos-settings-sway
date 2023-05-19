@@ -16,7 +16,7 @@ set $term_server foot --server
 set $term_float footclient -a floating_shell
 
 # Your preferred application launcher
-set $menu fuzzel
+set $menu wofi --show drun --allow-images --hide-scroll --no-actions
 
 # Add --to-code to bindsym, support for non-latin layouts
 set $bindsym bindsym --to-code
