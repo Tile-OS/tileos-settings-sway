@@ -38,8 +38,8 @@ set $volume_up pulsemixer --change-volume +5 && $volume_bar
 set $volume_mute pulsemixer --toggle-mute && $volume_bar
 
 # clipboard history
-set $clipboard cliphist list | fuzzel --dmenu -p "Select item to copy" --lines 10 --width 35 | cliphist decode | wl-copy
-set $clipboard-del cliphist list | fuzzel --dmenu -p "Select item to delete" --lines 10 --width 35 | cliphist delete
+set $clipboard cliphist list | wofi --dmenu -p "Select item to copy:" --lines 10 | cliphist decode | wl-copy
+set $clipboard-del cliphist list | wofi --dmenu -p "Select item to delete:" --lines 10 | cliphist delete
 
 # Pulseaudo command
 set $pulseaudio $term_float pulsemixer
