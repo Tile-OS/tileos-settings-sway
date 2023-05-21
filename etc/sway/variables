@@ -21,6 +21,9 @@ set $menu wofi --show drun --allow-images --hide-scroll --no-actions
 # Add --to-code to bindsym, support for non-latin layouts
 set $bindsym bindsym --to-code
 
+# Bluetooth menu
+set $bluetooth $term_float bluetuith
+
 # Volume notification
 set $volume_bar /usr/share/sway/scripts/volume-notify.sh
 
