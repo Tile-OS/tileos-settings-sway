@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # This script requires i3ipc-python package (install it from a system package manager
 # or pip).
@@ -24,6 +24,7 @@ WINDOW_ICONS = {
     "discord": "",
     "engrampa": "",
     "firefox": "",
+    "firefox-esr": "",
     "foot": "",
     "gimp-2.10": "",
     "gimp-2.99": "",
