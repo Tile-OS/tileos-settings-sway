@@ -1,3 +1,9 @@
+tileos-settings-sway (0.15~tileos) unstable; urgency=medium
+
+  * Small fixes
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Tue, 23 May 2023 09:49:33 +0400
+
 tileos-settings-sway (0.14~tileos) unstable; urgency=medium
 
   * Set bluetuith as bluetooth manager
