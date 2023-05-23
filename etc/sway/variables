@@ -95,9 +95,6 @@ set $import_gsettings '[ -f /usr/share/sway/scripts/import-gsettings.sh ] && /us
 # Start PCmanFM as a daemon
 set $pcmanfm_daemon '[ -x "$(command -v pcmanfm)" ] && pcmanfm -d'
 
-# Power notifications daemon
-set $poweralertd '[ -x "$(command -v poweralertd)" ] && pkill poweralertd; poweralertd -s -i "line power" &'
-
 # Clipboard manager
 set $cliphist_store '[ -x "$(command -v wl-paste)" ] && [ -x "$(command -v cliphist)" ] && wl-paste --watch cliphist store'
 set $cliphist_watch '[ -x "$(command -v wl-paste)" ] && [ -x "$(command -v cliphist)" ] && wl-paste --watch pkill -RTMIN+9 waybar'

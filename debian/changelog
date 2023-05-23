@@ -1,3 +1,9 @@
+tileos-settings-sway (0.16~tileos) unstable; urgency=medium
+
+  * Start poweralertd via systemd
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Tue, 23 May 2023 16:29:24 +0400
+
 tileos-settings-sway (0.15~tileos) unstable; urgency=medium
 
   * Small fixes
