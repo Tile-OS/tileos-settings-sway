@@ -4,6 +4,12 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+# Color scheme and window's settings
+set $theme /usr/share/tileos/themes/catppuccin-macchiato
+
+# Theme variables
+include $theme/theme
+
 # Global variables
 include /etc/sway/variables
 
