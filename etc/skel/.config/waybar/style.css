@@ -34,6 +34,7 @@
 
 #window {
     margin-left: 10px;
+    margin-bottom: 3px;
 }
 
 window#waybar {
@@ -45,10 +46,10 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    padding: 2px 0px;
     border-bottom: 2px;
     border-color: #24273a;
     border-style: solid;
+    margin-bottom: 3px;
 }
 
 #workspaces button.focused {
@@ -63,6 +64,7 @@ window#waybar.hidden {
 
 #mode {
     color: #ebcb8b;
+    margin-bottom: 3px;
 }
 
 #clock,
@@ -86,6 +88,7 @@ window#waybar.hidden {
     padding: 0 6px;
     border-bottom: 2px;
     border-style: solid;
+    margin-bottom: 3px;
 }
 
 #clock {
