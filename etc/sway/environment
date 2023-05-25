@@ -1,3 +1,7 @@
+# This file is a part of TileOS configuration for Sway and will be sourced
+# from /usr/bin/start-sway script for all users of the system.
+# User-specific variables should be placed in $XDG_CONFIG_HOME/sway/environment
+
 # TileOS specific config dir
 export XDG_CONFIG_DIRS=/etc/xdg/xdg-tileos:/etc/xdg
 
