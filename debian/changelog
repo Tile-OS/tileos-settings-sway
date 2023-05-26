@@ -1,3 +1,12 @@
+tileos-settings-sway (0.18~tileos) unstable; urgency=medium
+
+  * Added color theme for applications
+  * Added GTK settings
+  * Added qt5ct and qt6ct settings
+  * Added Swaylock config
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 26 May 2023 20:15:17 +0400
+
 tileos-settings-sway (0.17~tileos) unstable; urgency=medium
 
   * Include theme variables
