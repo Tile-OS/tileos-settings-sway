@@ -13,7 +13,7 @@ set $term-font Hack 11
 set $gui-font Noto Sans 10
 
 # Use catppuccin-macchiato color scheme for i3/Sway
-include /usr/share/tileos/themes/catppuccin-i3-theme/catppuccin-macchiato
+include /usr/share/tileos/themes/Catppuccin/catppuccin-i3-theme/catppuccin-macchiato
 
 # target                 title     bg    text   indicator  border
 client.focused           $blue     $base $text  $rosewater $blue

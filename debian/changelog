@@ -1,3 +1,9 @@
+tileos-settings-sway (0.19~tileos) unstable; urgency=medium
+
+  * Change Sway theme path
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 26 May 2023 20:31:09 +0400
+
 tileos-settings-sway (0.18~tileos) unstable; urgency=medium
 
   * Added color theme for applications
