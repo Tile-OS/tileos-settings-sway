@@ -1,3 +1,9 @@
+tileos-settings-sway (0.20~tileos) unstable; urgency=medium
+
+  * Set new wallpaper
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 26 May 2023 20:37:04 +0400
+
 tileos-settings-sway (0.19~tileos) unstable; urgency=medium
 
   * Change Sway theme path
