@@ -1,0 +1,24 @@
+################----------------THEMING----------------################
+
+# Window borders
+default_border pixel 2
+smart_borders on
+gaps inner 6
+
+# Tittle bar font
+font pango:Noto Sans 10
+
+# Fonts
+set $term-font Hack 11
+set $gui-font Noto Sans 10
+
+# Use catppuccin-macchiato color scheme for i3/Sway
+include /usr/share/tileos/themes/catppuccin-i3-theme/catppuccin-macchiato
+
+# target                 title     bg    text   indicator  border
+client.focused           $blue     $base $text  $rosewater $blue
+client.focused_inactive  $pink     $base $text  $rosewater $pink
+client.unfocused         $pink     $base $text  $rosewater $pink
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
