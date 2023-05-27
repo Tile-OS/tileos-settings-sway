@@ -1,3 +1,9 @@
+tileos-settings-sway (0.21~tileos) unstable; urgency=medium
+
+  * Move theme variables to config.d
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sat, 27 May 2023 13:31:33 +0400
+
 tileos-settings-sway (0.20~tileos) unstable; urgency=medium
 
   * Set new wallpaper
