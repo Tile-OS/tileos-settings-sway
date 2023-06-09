@@ -1,3 +1,10 @@
+tileos-settings-sway (0.24~tileos) unstable; urgency=medium
+
+  * Switch back to using config file for
+    autostart services instead of systemd
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 09 Jun 2023 18:44:02 +0400
+
 tileos-settings-sway (0.23~tileos) unstable; urgency=medium
 
   * Fix qt5ct/qt6ct colors
