@@ -6,18 +6,18 @@ smart_borders on
 gaps inner 6
 
 # Tittle bar font
-font pango:Noto Sans 11
+font pango:Noto Sans 12
 
 # Fonts
 set $term-font Hack 11
-set $gui-font Noto Sans 11
+set $gui-font Noto Sans 12
 
 # Sway colors. You can change default color scheme in ~/.config/sway/config
 
-# target                 title     bg    text   indicator  border
-client.focused           $blue     $base $text  $rosewater $blue
-client.focused_inactive  $pink     $base $text  $rosewater $pink
-client.unfocused         $pink     $base $text  $rosewater $pink
-client.urgent            $peach    $base $peach $overlay0  $peach
-client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+# target                 title     bg      text   indicator  border
+client.focused           $blue     $mantle $text  $rosewater $blue
+client.focused_inactive  $subtext0 $base   $text  $rosewater $subtext0
+client.unfocused         $subtext0 $base   $text  $rosewater $subtext0
+client.urgent            $peach    $base   $peach $overlay0  $peach
+client.placeholder       $overlay0 $base   $text  $overlay0  $overlay0
 client.background        $base

@@ -22,8 +22,8 @@
 
 /* Reset all styles */
 * {
-    border: 0;
-    border-radius: 0;
+    border: 0px;
+    border-radius: 0px;
     color: #cad3f5;
     padding: 0 0;
     margin-right: 2px;
