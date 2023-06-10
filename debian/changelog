@@ -1,3 +1,12 @@
+tileos-settings-sway (0.25~tileos) unstable; urgency=medium
+
+  * Improve Swayr config
+  * Add Calamares window rule (for native Wayland window)
+  * Enable swayidle
+  * Revert "Swtich back from running apps with systemd"
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sat, 10 Jun 2023 22:35:51 +0400
+
 tileos-settings-sway (0.24~tileos) unstable; urgency=medium
 
   * Switch back to using config file for
