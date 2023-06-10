@@ -8,7 +8,7 @@ Homepage: https://github.com/Tile-OS/tileos-settings-sway.git
 Rules-Requires-Root: no
 
 Package: tileos-settings-sway
-Architecture: all
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: tileos-settings-river
 Description: default settings for Sway on TileOS
