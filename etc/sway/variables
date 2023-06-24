@@ -15,7 +15,7 @@ set $term_cwd $term -D "$(/usr/share/sway/scripts/swaycwd.sh 2>/dev/null || echo
 set $term_server foot --server
 set $term_float footclient -a floating_shell
 
-# rofi theme
+# Rofi theme
 set $rofi_theme "* {lightbg: $base; background: $base; lightfg: $blue; foreground: $text; border-color: $blue;} window {border: 2;}"
 
 # Your preferred application launcher
@@ -33,7 +33,7 @@ set $volume_bar /usr/share/sway/scripts/volume-notify.sh
 # Brightness notification
 set $brightness_bar /usr/share/sway/scripts/brightness-notify.sh
 
-# brightness control
+# Brightness control
 set $brightness_step bash -c 'echo $(( $(light -Mr) / 100 * 5 < 1 ? 1 : $(( $(light -Mr) / 100 * 5 )) ))'
 set $brightness_up light -r -A $($brightness_step) && $brightness_bar
 set $brightness_down light -r -U $($brightness_step) && $brightness_bar
@@ -43,15 +43,21 @@ set $volume_down pulsemixer --change-volume -5 && $volume_bar
 set $volume_up pulsemixer --change-volume +5 && $volume_bar
 set $volume_mute pulsemixer --toggle-mute && $volume_bar
 
-# clipboard history
+# Clipboard history
 set $clipboard cliphist list | rofi -dmenu -font "$gui-font" -p "Select item to copy:" -lines 10 -width 35 | cliphist decode | wl-copy
 set $clipboard-del cliphist list | rofi -dmenu -font "$gui-font" -p "Select item to delete:" -lines 10 -width 35 | cliphist delete
 
 # Pulseaudo command
 set $pulseaudio $term_float pulsemixer
 
-# calendar application
+# Calendar application
 set $calendar $term_float calcurse
+
+# Help overlay
+set $help_menu '[ -x "$(command -v nwg-wrapper)" ] && [ -f $HOME/.config/nwg-wrapper/help.sh ] && /usr/share/sway/scripts/help.sh'
+
+# Help overlay command
+set $help /usr/share/sway/scripts/help.sh --toggle
 
 ### Idle configuration
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -71,7 +77,7 @@ set $idle swayidle -w \
     before-sleep $lock \
     lock $lock &
 
-# workspace names
+# Workspace names
 set $ws1 number 1
 set $ws2 number 2
 set $ws3 number 3
@@ -83,7 +89,7 @@ set $ws8 number 8
 set $ws9 number 9
 set $ws10 number 10
 
-# screenshot
+# Screenshot
 set $grimshot /usr/bin/grimshot
 set $pipe_output $grimshot save output -
 set $pipe_selection $grimshot save window -

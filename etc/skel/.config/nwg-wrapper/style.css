@@ -1,0 +1,13 @@
+window {
+	background-color: @theme_bg_color;
+	font-size: medium;
+    color: #cad3f5;
+}
+
+#box-inner {
+	border-radius: 0px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #8aadf4;
+	padding: 10px;
+}
