@@ -1,3 +1,9 @@
+tileos-settings-sway (0.26~tileos) unstable; urgency=medium
+
+  * Add help overlay via nwg-wrapper
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sun, 25 Jun 2023 21:28:41 +0400
+
 tileos-settings-sway (0.25~tileos) unstable; urgency=medium
 
   * Improve Swayr config
