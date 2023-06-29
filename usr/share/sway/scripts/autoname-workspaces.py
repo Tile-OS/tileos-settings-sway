@@ -49,6 +49,7 @@ WINDOW_ICONS = {
     "pavucontrol": "",
     "pluma": "",
     "pcmanfm": "",
+    "pcmanfm-qt": "",
     "simple-scan": "",
     "software-properties-gtk": "",
     "steam": "",
