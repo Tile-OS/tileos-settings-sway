@@ -31,6 +31,7 @@ WINDOW_ICONS = {
     "Google-chrome": "",
     "google-chrome": "",
     "gpk-application": "",
+    "kitty": "",
     "libreoffice-startcenter": "",
     "libreoffice-writer": "",
     "libreoffice-calc": "",

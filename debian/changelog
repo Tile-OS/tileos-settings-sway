@@ -1,3 +1,9 @@
+tileos-settings-sway (0.28~tileos) unstable; urgency=medium
+
+  * Kitty fixes
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 30 Jun 2023 15:42:11 +0400
+
 tileos-settings-sway (0.27~tileos) unstable; urgency=medium
 
   * Switch to Kitty

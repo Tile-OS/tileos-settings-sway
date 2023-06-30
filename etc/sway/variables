@@ -11,7 +11,7 @@ set $right l
 
 # Your preferred terminal emulator
 set $term kitty
-set $term_cwd $term -D "$(/usr/share/sway/scripts/swaycwd.sh 2>/dev/null || echo $HOME)"
+set $term_cwd $term -d "$(/usr/share/sway/scripts/swaycwd.sh 2>/dev/null || echo $HOME)"
 set $term_float kitty --class=floating_shell
 
 # Rofi theme
