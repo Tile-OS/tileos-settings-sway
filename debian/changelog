@@ -1,3 +1,9 @@
+tileos-settings-sway (0.33~tileos) unstable; urgency=medium
+
+  * Fix alacritty panel icon
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 30 Jun 2023 22:41:19 +0400
+
 tileos-settings-sway (0.32~tileos) unstable; urgency=medium
 
   * Switch to Alacritty in PCmanFM-Qt
