@@ -1,3 +1,9 @@
+tileos-settings-sway (0.30~tileos) unstable; urgency=medium
+
+  * Fix package
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 30 Jun 2023 17:49:34 +0400
+
 tileos-settings-sway (0.29~tileos) unstable; urgency=medium
 
   * Install png wallpaper
