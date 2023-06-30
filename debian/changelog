@@ -1,3 +1,9 @@
+tileos-settings-sway (0.31~tileos) unstable; urgency=medium
+
+  * Switch to Alacritty
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 30 Jun 2023 20:55:36 +0400
+
 tileos-settings-sway (0.30~tileos) unstable; urgency=medium
 
   * Fix package
