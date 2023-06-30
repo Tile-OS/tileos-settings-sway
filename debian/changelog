@@ -1,3 +1,10 @@
+tileos-settings-sway (0.27~tileos) unstable; urgency=medium
+
+  * Switch to Kitty
+  * Switch to PCmanFM-Qt
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 30 Jun 2023 14:38:01 +0400
+
 tileos-settings-sway (0.26~tileos) unstable; urgency=medium
 
   * Add help overlay via nwg-wrapper
