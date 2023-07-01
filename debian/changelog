@@ -1,3 +1,9 @@
+tileos-settings-sway (0.34~tileos) unstable; urgency=medium
+
+  * Fix floating_shell for Alacritty
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sun, 02 Jul 2023 00:15:48 +0400
+
 tileos-settings-sway (0.33~tileos) unstable; urgency=medium
 
   * Fix alacritty panel icon

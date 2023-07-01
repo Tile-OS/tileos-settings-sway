@@ -12,7 +12,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 set $term_cwd $term --working-directory "$(/usr/share/sway/scripts/swaycwd.sh 2>/dev/null || echo $HOME)"
-set $term_float alacritty --class=floating_shell
+set $term_float alacritty --class floating_shell -e
 
 # Rofi theme
 set $rofi_theme "* {lightbg: $base; background: $base; lightfg: $blue; foreground: $text; border-color: $blue;} window {border: 2;}"
