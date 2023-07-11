@@ -1,3 +1,11 @@
+tileos-settings-sway (0.35~tileos) unstable; urgency=medium
+
+  * Added flock wrapper for running only one process
+  * waybar: improve network module
+  * removed unused configs
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Tue, 11 Jul 2023 20:53:29 +0400
+
 tileos-settings-sway (0.34~tileos) unstable; urgency=medium
 
   * Fix floating_shell for Alacritty
