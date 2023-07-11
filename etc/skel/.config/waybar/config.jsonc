@@ -145,7 +145,7 @@
           "warning": 70,
           "critical": 90
           },
-    "on-click": "swaymsg exec \\$term_float btop"
+    "on-click": "swaymsg exec \\$flock \\$term_float btop"
     },
 
     "memory": {
@@ -155,7 +155,7 @@
           "warning": 70,
           "critical": 90
         },
-    "on-click": "swaymsg exec \\$term_float btop"
+    "on-click": "swaymsg exec \\$flock \\$term_float btop"
     
     },
 
@@ -174,7 +174,7 @@
        "tooltip-format-wifi": "{icon} {ifname} ({essid}): {ipaddr}",
        "tooltip-format-disconnected": "{icon} disconnected",
        "tooltip-format-disabled": "{icon} disabled",
-       "on-click": "swaymsg exec \\$term_float nmtui connect"
+       "on-click": "swaymsg exec \\$flock \\$term_float nmtui connect"
     },
 
     "bluetooth": {

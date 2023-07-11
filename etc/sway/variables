@@ -9,6 +9,9 @@ set $down j
 set $up k
 set $right l
 
+# flock wrapper for running only one process
+set $flock /usr/share/sway/scripts/flock.sh
+
 # Your preferred terminal emulator
 set $term alacritty
 set $term_cwd $term --working-directory "$(/usr/share/sway/scripts/swaycwd.sh 2>/dev/null || echo $HOME)"
@@ -24,7 +27,7 @@ set $menu rofi -show combi -combi-modi "drun,run" -terminal $term -ssh-command "
 set $bindsym bindsym --to-code
 
 # Bluetooth menu
-set $bluetooth $term_float bluetuith
+set $bluetooth $flock $term_float bluetuith
 
 # Volume notification
 set $volume_bar /usr/share/sway/scripts/volume-notify.sh
