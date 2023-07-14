@@ -197,7 +197,7 @@
            "default": ["", "", ""]
        },
        "tooltip-format": "{icon}  {volume}% {format_source}",
-       "on-click": "swaymsg exec \\$pulseaudio",
+       "on-click": "swaymsg exec \\$flock \\$pulseaudio",
        "on-click-middle": "swaymsg exec \\$volume_mute",
        "on-click-right": "swaymsg exec pavucontrol",
        "on-scroll-up": "swaymsg exec \\$volume_up",
