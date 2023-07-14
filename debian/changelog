@@ -1,3 +1,9 @@
+tileos-settings-sway (0.36~tileos) unstable; urgency=medium
+
+  * Added default mime list
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Fri, 14 Jul 2023 22:48:38 +0400
+
 tileos-settings-sway (0.35~tileos) unstable; urgency=medium
 
   * Added flock wrapper for running only one process
