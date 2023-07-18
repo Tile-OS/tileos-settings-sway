@@ -1,3 +1,9 @@
+tileos-settings-sway (0.37~tileos) unstable; urgency=medium
+
+  * Use nm-connection-editor as primary NM GUI
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Tue, 18 Jul 2023 15:17:54 +0400
+
 tileos-settings-sway (0.36~tileos) unstable; urgency=medium
 
   * Added default mime list
