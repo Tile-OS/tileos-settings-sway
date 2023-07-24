@@ -1,0 +1,20 @@
+################----------------STYLING----------------################
+
+#don't show gaps if there's only one window on the desktop
+smart_gaps on
+
+# Window borders
+default_border pixel 2
+
+# Disable borders if there is only one window
+smart_borders on
+
+# Default gaps interval
+gaps inner 6
+
+# Tittle bar font
+font pango:Noto Sans 12
+
+# Fonts
+set $term-font Hack 11
+set $gui-font Noto Sans 12

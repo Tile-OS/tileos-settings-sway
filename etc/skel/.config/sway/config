@@ -5,10 +5,10 @@
 # Read `man 5 sway` for a complete reference.
 
 # Color scheme
-include /usr/share/tileos/themes/Catppuccin/catppuccin-i3-theme/catppuccin-macchiato
+include /usr/share/tileos/themes/catppuccin/catppuccin-macchiato
 
 # Sway styling
-include /etc/sway/theme
+include /etc/sway/styling
 
 # Global variables
 include /etc/sway/variables
