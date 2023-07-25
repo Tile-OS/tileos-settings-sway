@@ -1,3 +1,9 @@
+tileos-settings-sway (0.38~tileos) unstable; urgency=medium
+
+  * Move Sway theme from tileos-artwork
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Tue, 25 Jul 2023 21:44:29 +0400
+
 tileos-settings-sway (0.37~tileos) unstable; urgency=medium
 
   * Use nm-connection-editor as primary NM GUI
