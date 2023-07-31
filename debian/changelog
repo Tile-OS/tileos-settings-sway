@@ -1,3 +1,9 @@
+tileos-settings-sway (0.39~tileos) unstable; urgency=medium
+
+  * Minor fixes
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Mon, 31 Jul 2023 23:20:04 +0400
+
 tileos-settings-sway (0.38~tileos) unstable; urgency=medium
 
   * Move Sway theme from tileos-artwork
