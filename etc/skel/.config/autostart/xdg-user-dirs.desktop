@@ -1,20 +1,7 @@
 [Desktop Entry]
-Comment[ru_RU]=
-Comment=
 Exec=xdg-user-dirs-update
-GenericName[ru_RU]=
-GenericName=
-MimeType=
-Name[ru_RU]=User folders update
-Name=User folders update
 NoDisplay=true
-Path=
 StartupNotify=false
 Terminal=false
-TerminalOptions=
 TryExec=xdg-user-dirs-update
 Type=Application
-X-GNOME-Autostart-Phase=Initialization
-X-KDE-SubstituteUID=false
-X-KDE-Username=
-X-KDE-autostart-phase=1
