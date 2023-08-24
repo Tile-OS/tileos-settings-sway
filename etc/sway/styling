@@ -12,6 +12,9 @@ smart_borders on
 # Default gaps interval
 gaps inner 6
 
+# Set focus to application window when it request activation
+focus_on_window_activation focus
+
 # Tittle bar font
 font pango:Noto Sans 12
 
