@@ -1,5 +1,6 @@
 [Unit]
 Requires=graphical-session.target
+ConditionPathExists=/usr/share/sway/scripts/switch-top-level.py
 
 [Service]
 ExecStart=/usr/share/sway/scripts/switch-top-level.py
