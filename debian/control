@@ -9,6 +9,6 @@ Rules-Requires-Root: no
 
 Package: tileos-settings-sway
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, sway-systemd
 Conflicts: tileos-settings-river
 Description: default settings for Sway on TileOS
