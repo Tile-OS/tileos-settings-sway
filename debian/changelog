@@ -1,3 +1,9 @@
+tileos-settings-sway (0.42~tileos) unstable; urgency=medium
+
+  * Added more systemd user services
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Mon, 04 Sep 2023 00:43:19 +0400
+
 tileos-settings-sway (0.41~tileos) unstable; urgency=medium
 
   * Improve environment variables export
