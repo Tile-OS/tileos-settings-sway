@@ -1,9 +1,9 @@
 [Unit]
 Requires=sway-session.target
-ConditionPathExists=/usr/share/sway/scripts/switch-top-level.py
+ConditionPathExists=/usr/bin/nwg-drawer
 
 [Service]
-ExecStart=/usr/share/sway/scripts/switch-top-level.py
+ExecStart=/usr/bin/nwg-drawer -r
 Restart=on-failure
 RestartSec=1
 
