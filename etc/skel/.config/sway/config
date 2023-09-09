@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 # Color scheme
-include /usr/share/tileos/themes/catppuccin/catppuccin-macchiato
+include /usr/share/themes/catppuccin-i3/catppuccin-macchiato
 
 # Sway styling
 include /etc/sway/styling

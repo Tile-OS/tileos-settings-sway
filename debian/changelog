@@ -1,3 +1,9 @@
+tileos-settings-sway (0.43~tileos) unstable; urgency=medium
+
+  * Update wallpaper
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sat, 09 Sep 2023 23:17:09 +0400
+
 tileos-settings-sway (0.42~tileos) unstable; urgency=medium
 
   * Added more systemd user services
