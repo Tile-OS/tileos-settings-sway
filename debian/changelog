@@ -1,3 +1,9 @@
+tileos-settings-sway (0.44~tileos) unstable; urgency=medium
+
+  * Adjust PCmanFM-Qt window
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Thu, 14 Sep 2023 00:30:10 +0400
+
 tileos-settings-sway (0.43~tileos) unstable; urgency=medium
 
   * Update wallpaper
